@@ -32,7 +32,7 @@ const Navbar = () => {
         }}>
           <hr className='divider' />
           <div className="user-container d-flex align-items-center">
-            <img src="https://media.istockphoto.com/id/1209654046/vector/user-avatar-profile-icon-black-vector-illustration.jpg?s=612x612&w=0&k=20&c=EOYXACjtZmZQ5IsZ0UUp1iNmZ9q2xl1BD1VvN6tZ2UI=" alt="" className="user-image" />
+            <img src='https://www.caehm.com/wp-content/uploads/2020/12/Person-Icon-e1626540139554.png' alt="" className="user-image" />
             <div className="account-info d-flex justify-content-between w-100">
               <span className='d-flex flex-column'>
                 <h6>Satish kumar</h6>
