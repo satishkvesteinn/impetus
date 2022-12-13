@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/impetus/static/css/main.1d969b66.css",
+    "main.js": "/impetus/static/js/main.dd89ae0d.js",
+    "index.html": "/impetus/index.html",
+    "main.1d969b66.css.map": "/impetus/static/css/main.1d969b66.css.map",
+    "main.dd89ae0d.js.map": "/impetus/static/js/main.dd89ae0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d969b66.css",
+    "static/js/main.dd89ae0d.js"
+  ]
+}
