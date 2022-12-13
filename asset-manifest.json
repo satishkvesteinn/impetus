@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/impetus/static/css/main.c91f570e.css",
-    "main.js": "/impetus/static/js/main.2dd27d62.js",
+    "main.js": "/impetus/static/js/main.c14bd7a4.js",
     "index.html": "/impetus/index.html",
     "main.c91f570e.css.map": "/impetus/static/css/main.c91f570e.css.map",
-    "main.2dd27d62.js.map": "/impetus/static/js/main.2dd27d62.js.map"
+    "main.c14bd7a4.js.map": "/impetus/static/js/main.c14bd7a4.js.map"
   },
   "entrypoints": [
     "static/css/main.c91f570e.css",
-    "static/js/main.2dd27d62.js"
+    "static/js/main.c14bd7a4.js"
   ]
 }
