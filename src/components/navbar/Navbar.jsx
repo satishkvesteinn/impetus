@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import './navbar.scss'
-import logo from '../../components/logo.png'
+import { useSelector, useDispatch } from 'react-redux'
+import { change } from '../../features/home/ChangeSlice'
 
 const Navbar = () => {
-
+  const changes = useSelector((state) => state.changes.value)
+  const dispatch = useDispatch()
   const [show, setShow] = useState(false)
   const [menuShow, setMenuShow] = useState(true)
 
   return (
     <>
       <div className="logo-container d-flex justify-content-between align-items-center">
-        <img className='logo' src={logo} alt="" />
+        <img className='logo' src="https://gcc.naava.io/wp-content/uploads/2020/04/Naava-logo.png" alt="" />
         {
           show ? <i className="bi bi-x-square menu-click-icon" onClick={() => {
             setShow(false)
@@ -34,7 +36,7 @@ const Navbar = () => {
             <div className="account-info d-flex justify-content-between w-100">
               <span className='d-flex flex-column'>
                 <h6>Satish kumar</h6>
-                <p>Student</p>
+                <p>{!changes ? "Student" : "Admin"}</p>
               </span>
               <span style={{
                 color: "#ffffff",
@@ -50,6 +52,8 @@ const Navbar = () => {
             <li className="menu-list"><span><i className="bi bi-house menu-icon"></i></span>Approvals</li>
             <li className="menu-list"><span><i className="bi bi-house menu-icon"></i></span>Contact Us</li>
             <li className="menu-list"><span><i className="bi bi-house menu-icon"></i></span>Members</li>
+
+            <button className='home-change-btn' onClick={() => { dispatch(change(!changes)) }}>change home</button>
           </ul>
         </div>
       </nav>

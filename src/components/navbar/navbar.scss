@@ -110,6 +110,16 @@
                     color: white;
                 }
             }
+
+            .home-change-btn {
+                border: none;
+                cursor: pointer;
+                font-size: 0.9rem;
+                padding: 4px 30px;
+                border-radius: 10px;
+                background-color: #019549;
+                color: #ffffff;
+            }
         }
     }
 }

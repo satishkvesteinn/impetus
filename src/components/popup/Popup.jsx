@@ -19,9 +19,6 @@ export default function Popup(props) {
   const dispatch = useDispatch()
   const [open, setOpen] = React.useState(false);
 
-
-  const handleClose = () => { }
-
   React.useEffect(() => {
     setOpen(popup.open)
   }, [popup])

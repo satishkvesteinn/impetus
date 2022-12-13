@@ -10,7 +10,6 @@ export const popupSlice = createSlice({
     initialState,
     reducers: {
         open: (state, action) => {
-            console.log(action);
             state.open = action.payload.open
             state.data = action.payload.data
         },

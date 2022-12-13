@@ -7,11 +7,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import './table.scss';
-
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { open } from '../../features/popup/OpenSlice';
-import Popup from '../popup/Popup';
-
 const columns = [
     { id: 'name', label: 'Name', minWidth: 170, bold: 600, },
     { id: 'batch', label: 'Batch No', minWidth: 170, bold: 600, color: '#02a550' },
@@ -54,27 +51,15 @@ const rows = [
 ];
 
 export default function Tables() {
-    const popup = useSelector((state) => state.popup)
     const dispatch = useDispatch()
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
-
-    const handleChangePage = (event, newPage) => {
-        setPage(newPage);
-    };
 
     const handleChangeRowsPerPage = (event) => {
         setRowsPerPage(+event.target.value);
         setPage(0);
     };
 
-
-    const openPopup = (props) => {
-        console.log("click");
-        return (
-            <Popup data={props} opens={true} />
-        )
-    }
 
     return (
         <>
