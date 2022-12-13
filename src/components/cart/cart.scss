@@ -1,0 +1,29 @@
+.cart {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+
+    .cart-icon {
+        border-radius: 20px;
+        padding: 22px 28px;
+        margin-right: 15px;
+        background-color: #eaffee;
+        color: #009346;
+        font-size: 2.1rem;
+    }
+
+    .cart-title{
+        margin: 0;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #009346;
+    }
+
+    .cart-desc{
+        margin: 0;
+        font-size: .92rem;
+        color: black;
+        font-weight: 500;
+    }
+
+}
